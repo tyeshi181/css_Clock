@@ -1,0 +1,124 @@
+#clock {
+  width: 400px;
+  height: 400px;
+  border: 10px solid #333300;
+  border-radius: 50%;
+  position: relative;
+  background-color: pink;
+}
+
+#second {
+  width: 5px;
+  height: 180px;
+  background-color: red;
+  position: absolute;
+  margin-left: 190px;
+  margin-top: 15px;
+  animation: rotate 60s infinite linear;
+}
+
+#minute {
+  width: 8px;
+  height: 140px;
+  background-color: green;
+  position: absolute;
+  margin-left: 188px;
+  margin-top: 55px;
+  animation: rotate 3600s infinite linear;
+}
+
+#hour {
+  width: 12px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  margin-left: 185px;
+  margin-top: 95px;
+  animation: rotate 43200s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    transform-origin: center bottom;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center bottom;
+  }
+}
+
+#twelve {
+  position: absolute;
+  margin-left: 182px;
+  font-size: 30px;
+  margin-top: 10px;
+  text-shadow: 1px 1px grey;
+  color: #cc9900;
+}
+
+#nine {
+  position: absolute;
+  margin-left: 15px;
+  font-size: 30px;
+  margin-top: 175px;
+  text-shadow: 1px 1px grey;
+  color: #cc9900;
+}
+
+#three {
+  position: absolute;
+  margin-left: 380px;
+  margin-top: 175px;
+  font-size: 30px;
+  text-shadow: 1px 1px grey;
+  color: #cc9900;
+}
+
+#six {
+  position: absolute;
+  margin-left: 194px;
+  margin-top: 360px;
+  font-size: 30px;
+  text-shadow: 1px 1px grey;
+  color: #cc9900;
+}
+
+#circle {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 180px;
+  margin-top: 182px;
+  background-color: yellow;
+}
+
+#pic {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+#stand {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  background-color: #003300;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#da-te {
+  position: absolute;
+  margin-left: 22px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 240px;
+  text-shadow: 1.2px 1.2px;
+  text-decoration: underline;
+  transition: background-color 0.5s, color 0.5s linear, ease-out;
+  text-align: center;
+}
